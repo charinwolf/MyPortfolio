@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+:root {
+/*================ COLORES ===========*/  
+  --color-primario: #003308;
+  --color-secundario: #33FF33;
+  --color-terciario: #DDFF33;
+  --color-fuente: #fff;
+
+  --color-gradiente-p: #95FF80;
+  --color-gradiente-s: #0D4D00;
+  --color-gradiente-t: #006611;
+  --color-gradiente-c: #19FFB2;
+
+  --skill-card-p: #004D1A;
+  --skill-card-s: #006644;
+  --skill-card-background: #003308;
+  --skill-color-percentage: #00B3B3;
+  
+  
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -7,6 +27,6 @@
 }
 
 body {
-  color: #fff;
-  background-color: #3D0000;
+  color: var(--color-fuente );
+  background-color: var(--color-primario);
 }

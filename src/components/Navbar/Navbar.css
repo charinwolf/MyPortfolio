@@ -38,7 +38,7 @@
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-fuente);
     position: relative;
     cursor: pointer;
 }
@@ -47,7 +47,7 @@
     content: " ";
     width: 2rem;
     height: 0.2rem;
-    background: linear-gradient(90deg, #FFBB99 0%, #660000 100% );
+    background: linear-gradient(90deg, var(--color-secundario) 0%, var(--color-primario) 100% );
     border-radius: 0.5rem;
     position: absolute;
     bottom: -0.6rem;
@@ -68,8 +68,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    background: linear-gradient(90deg, #FFBB99 0%, #660000 100%);
+    color: var(--color-fuente);
+    background: linear-gradient(90deg, var(--color-gradiente-p) 0%, var(--color-gradiente-s) 100%);
     padding: 0.6rem 2rem;
     border: none;
     outline: 1.5px solid transparent;
@@ -79,9 +79,9 @@
 }
 
 .contact-btn:hover {
-    color: #fff;
-    background: #1A0008;
-    outline: 1.5px solid #CC0022;
+    color: var(--color-fuente);
+    background: var(--color-primario);
+    outline: 1.5px solid var(--color-secundario);
 }
 
 .menu-btn {
@@ -93,8 +93,8 @@
     justify-content: center;
     border: none;
     border-radius: 0.4rem;
-    color: #fff;
-    background: linear-gradient(90deg, #FFBB99 -0.13%, #660000 99.87%);
+    color: var(--color-fuente);
+    background: linear-gradient(90deg, var(--color-gradiente-p) -0.13%, var(--color-gradiente-s) 99.87%);
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -102,9 +102,9 @@
 }
   
 .menu-btn:hover {
-    color: #fff;
-    background: #1A0008;
-    border: 1px solid #CC0022;
+    color: var(--color-fuente);
+    background: var(--color-primario);
+    border: 1px solid var(--color-secundario);
 }
 
 @media (max-width: 425px) {
