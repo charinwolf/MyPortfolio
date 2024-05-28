@@ -12,9 +12,10 @@ const Skills = () => {
   }
 
   return (
-   <section className='skills-container'>
+  
+   <section className='skills-container' id='skills'>
     <h5>Capacidades Técnicas</h5>
-
+  
     <div className="skills-content">
       <div className="skills">
         {SKILLS.map((item) => (

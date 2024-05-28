@@ -24,7 +24,7 @@ export const SKILLS = [
         ],
     },
     {
-        title: "Soft Skills", 
+        title: "Habilidades Blandas", 
         icon: "./assets/images/soft-skill-icon.png",
         skills: [
             { skill: "Colaboración", percentage: "80%" },

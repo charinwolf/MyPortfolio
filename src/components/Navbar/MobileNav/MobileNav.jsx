@@ -2,6 +2,10 @@ import React from 'react';
 import './MobileNav.css'
 
 const MobileNav = ({ isOpen, toggleMenu }) => {
+
+    const handleClick = () => {
+        window.open('https://drive.google.com/drive/u/1/folders/1KUYXWgAHulHaDGPuVRNMNu7SJoJqoN_v')
+    }
   return (
     <>
         <div className={`mobile-menu ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
@@ -20,7 +24,7 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
                     <li>
                         <a className="menu-item">Contacto</a>
                     </li>
-                    <button type='button' className='contact-btn' onClick={() => {}}>Download Resume</button>
+                    <button type='button' className='contact-btn' onClick={() => handleClick()}>Descargar CV</button>
                 </ul>
             </div>
         </div>

@@ -20,7 +20,8 @@
 
 .nav-title {
     width: 12rem;
-    height: auto;
+    height: 4.4rem;
+    cursor: pointer;
 }
 
 .nav-content ul {

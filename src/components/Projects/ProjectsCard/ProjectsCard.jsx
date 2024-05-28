@@ -3,6 +3,7 @@ import './ProjectsCard.css';
 
 
 const ProjectsCard = ({ details }) => {
+  
   const handleClick = () => {
     window.open(details.link);
   }
