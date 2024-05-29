@@ -1,35 +1,28 @@
 import React from 'react';
-import './MobileNav.css'
+import './MobileNav.css';
 
-const MobileNav = ({ isOpen, toggleMenu }) => {
-
-    const handleClick = () => {
-        window.open('https://drive.google.com/drive/u/1/folders/1KUYXWgAHulHaDGPuVRNMNu7SJoJqoN_v')
-    }
-  return (
-    <>
-        <div className={`mobile-menu ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-            <div className="mobile-menu-container">
-                <h1 className='mobile-title'>Randy's Portfolio</h1>
-                <ul>
-                    <li>
-                        <a className="menu-item">Inicio</a>
-                    </li>
-                    <li>
-                        <a className="menu-item">Skills</a>
-                    </li>
-                    <li>
-                        <a className="menu-item">Proyectos</a>
-                    </li>
-                    <li>
-                        <a className="menu-item">Contacto</a>
-                    </li>
-                    <button type='button' className='contact-btn' onClick={() => handleClick()}>Descargar CV</button>
-                </ul>
+const MobileNav = ({ isOpen, toggleMenu, handleMenuItemClick, handleTitleClick, handleClick }) => {
+    return (
+        <>
+            <div className={`mobile-menu ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+                <div className="mobile-menu-container">
+                    <h1 className='mobile-title' onClick={handleTitleClick}>Randy's Portfolio</h1>
+                    <ul>
+                        <li>
+                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('skills')}>Skills</a>
+                        </li>
+                        <li>
+                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('projects')}>Proyectos</a>
+                        </li>
+                        <li>
+                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('contactme')}>Contacto</a>
+                        </li>
+                        <button type='button' className='contact-btn' onClick={handleClick}>Descargar CV</button>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </>
-  )
-}
+        </>
+    );
+};
 
-export default MobileNav
+export default MobileNav;
