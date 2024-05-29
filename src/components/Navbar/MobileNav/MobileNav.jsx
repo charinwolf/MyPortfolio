@@ -9,13 +9,13 @@ const MobileNav = ({ isOpen, toggleMenu, handleMenuItemClick, handleTitleClick, 
                     <h1 className='mobile-title' onClick={handleTitleClick}>Randy's Portfolio</h1>
                     <ul>
                         <li>
-                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('skills')}>Skills</a>
+                            <a href='#skills' className="menu-item" onClick={(e) => handleMenuItemClick(e, 'skills')}>Skills</a>
                         </li>
                         <li>
-                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('projects')}>Proyectos</a>
+                            <a href='#projects' className="menu-item" onClick={(e) => handleMenuItemClick(e, 'projects')}>Proyectos</a>
                         </li>
                         <li>
-                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('contactme')}>Contacto</a>
+                            <a href='#contactme' className="menu-item" onClick={(e) => handleMenuItemClick(e, 'contactme')}>Contacto</a>
                         </li>
                         <button type='button' className='contact-btn' onClick={handleClick}>Descargar CV</button>
                     </ul>

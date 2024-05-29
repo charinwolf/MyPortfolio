@@ -17,7 +17,8 @@ const Navbar = () => {
         setOpenMenu(!openMenu);
     };
     
-    const handleMenuItemClick = (sectionId) => {
+    const handleMenuItemClick = (e, sectionId) => {
+        e.preventDefault(); 
         const section = document.getElementById(sectionId);
         if (section) {
             const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
@@ -57,13 +58,13 @@ const Navbar = () => {
                     <h1 className='nav-title' onClick={handleTitleClick}>Randy's Portfolio</h1>
                     <ul>
                         <li>
-                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('skills')}>Skills</a>
+                            <a href="#skills" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'skills')}>Skills</a>
                         </li>
                         <li>
-                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('projects')}>Proyectos</a>
+                            <a href="#projects" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'projects')}>Proyectos</a>
                         </li>
                         <li>
-                            <a href='#' className="menu-item" onClick={() => handleMenuItemClick('contactme')}>Contacto</a>
+                            <a href="#contactme" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'contactme')}>Contacto</a>
                         </li>
                         <button className='contact-btn' onClick={handleClick}>Descargar CV</button>
                     </ul>
